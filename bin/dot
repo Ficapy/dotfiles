@@ -7,14 +7,23 @@
 export ZSH=$HOME/.dotfiles
 
 # Set OS X defaults
+echo "> set defaults"
 $ZSH/osx/set-defaults.sh
 
 # Install homebrew
-$ZSH/homebrew/install.sh 2>&1
+ech0 "> install homebrew"
+$ZSH/homebrew/install.sh
+
+
+if [ -d "/Volumes/data/brew" ]; then
+    echo "brew use backup file"
+    cp -r "/Volumes/data/brew" "/Library/Caches/Homebrew"
+    echo "copy done"
+fi
 
 # Upgrade homebrew
-echo "› brew update"
-brew update
+# echo "› brew update"
+# brew update
 
 # Install software
 echo "› $ZSH/script/install"

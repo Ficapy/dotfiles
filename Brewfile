@@ -91,7 +91,6 @@ cask "neteasemusic"
 # 聊天工具
 cask "adium"
 cask "aliwangwang"
-cask "twitter"
 cask "qq"
 cask "telegram"
 cask "skype"
@@ -121,5 +120,5 @@ cask "sogouinput"
 
 ############################################################ AppStore
 #  Dash   Reeder  Mweb  Copyless
-#  Wechat  Upyun  ppduck
+#  Wechat  Upyun  ppduck twitter
 ############################################################ AppStore
