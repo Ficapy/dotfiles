@@ -18,8 +18,6 @@ brew 'postgresql', args: ['with-python']
 # python/ruby/nodejs工具
 brew 'python'
 brew 'mackup'
-brew 'python3'
-brew 'pypy'
 brew 'ruby'
 brew 'node'
 
@@ -68,12 +66,16 @@ brew 'nginx'
 brew 'nmap'
 brew 'pngpaste'
 brew 'homebrew/dupes/gpatch'
+brew 'weechat'
+brew 'reattach-to-user-namespace'
+brew 'fasd'
+brew 'fzf'
 
 ############################################################ 命令行工具
 
 ############################################################ GUI工具
 # 开发相关
-cask "atom"
+brew "macvim"
 cask "iterm2"
 cask "virtualbox"
 cask "vagrant"
